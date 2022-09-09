@@ -7,15 +7,15 @@ Zig binding for **liburlencoding**.
 ### API
 
 ```zig
-fn encode(data: []const u8) ?[]u8;
+fn encode(data: []const u8) Error![]u8;
 
-fn encodeBinary(data: []const u8) ?[]u8;
+fn encodeBinary(data: []const u8) Error![]u8;
 
-fn decode(data: []const u8) ?[]u8;
+fn decode(data: []const u8) Error![]u8;
 
-fn decodeBinary(data: []const u8) ?[]u8;
+fn decodeBinary(data: []const u8) Error![]u8;
 
-fn free(data: ?[]u8) void;
+fn free(data: []u8) void;
 ```
 
 ### References
